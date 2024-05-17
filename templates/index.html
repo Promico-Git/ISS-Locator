@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+  Stellar by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    
+    <title>ISS Locator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+          <span class="logo"><img src="static/images/logo.svg" alt="" /></span>
+          <h1>ISS Locator</h1>
+          <p>See the loction of the ISS<br />
+          </p>
+        </header>
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="/" class="active">ISS Location</a></li>
+          </ul>
+        </nav>
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- Content -->
+              <section id="content" class="main">
+                
+
+                <center>
+                 
+
+                    <span class="image"><img src="static/images/iss.jpeg" alt="" style="display: inline-block;  padding: 0.65em; border-radius: 10%; border: solid 1px; width: 90%; height: 300px;" /></span>
+                </br> </br>
+                  
+
+                  <b>
+                    <p>The ISS current location: {{ countryName }} </br>
+                    Latitude: {{ lat }}.  :::    Longitude: {{ lon }}. </br>
+                    Temperature: {{ temp }} °C </br>
+                    ISS distance from you: {{ distance }} km </br> </br>
+                    <img src="{{ flag_image }}" alt="Flag" width="150" height="100"> </br>
+                      Country Code : {{ countryCode }} </br>
+
+                      Click to get the location on the map: <a href="{{ map }}" style="color: blue;"">Map Link</a>
+              
+                   </p> 
+                  </b>
+                    </center>
+              </section>
+
+          </div>
+
+        <!-- Footer -->
+          <footer id="footer">
+
+            
+
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="static/assets/js/jquery.min.js"></script>
+      <script src="static/assets/js/jquery.scrollex.min.js"></script>
+      <script src="static/assets/js/jquery.scrolly.min.js"></script>
+      <script src="static/assets/js/browser.min.js"></script>
+      <script src="static/assets/js/breakpoints.min.js"></script>
+      <script src="static/assets/js/util.js"></script>
+      <script src="static/assets/js/main.js"></script>
+
+  </body>
+</html>
